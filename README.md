@@ -14,19 +14,19 @@ LLMPruner是一个大语言模型裁剪工具，通过对大语言模型的冗�
 ### Bloom
 对Bloom进行词表裁剪，保留常用的中英文token，词表由250880将至46145，缩减为原来的18.39%。
 
-| 裁剪模型                                                                                  | 原模型                                        | 参数量比例  | 
-|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------|
-| [YeungNLP/bloom-396m-zh](https://huggingface.co/bigscience/YeungNLP/bloom-396m-zh)    | [bigscience/bloom-560m](https://huggingface.co/bigscience/bloom-560m)       | 70.96% |  
-| [YeungNLP/bloom-820m-zh](https://huggingface.co/bigscience/YeungNLP/bloom-820m-zh)       | [bigscience/bloom-1b1](https://huggingface.co/bigscience/bloom-1b1)         | 77.13% |     
-| [YeungNLP/bloom-1b4-zh](https://huggingface.co/bigscience/YeungNLP/bloom-1b4-zh)         | [bigscience/bloom-1b7](https://huggingface.co/bigscience/bloom-1b7)         | 81.14% |     
-| [YeungNLP/bloom-2b6-zh](https://huggingface.co/bigscience/YeungNLP/bloom-2b6-zh)         | [bigscience/bloom-3b](https://huggingface.co/bigscience/bloom-3b)           | 86.48% |     
-| [YeungNLP/bloom-6b4-zh](https://huggingface.co/bigscience/YeungNLP/bloom-6b4-zh)         | [bigscience/bloom-7b1](https://huggingface.co/bigscience/bloom-7b1)         |  90.81% |         
-| [YeungNLP/bloomz-396m-zh](https://huggingface.co/bigscience/YeungNLP/bloomz-396m-zh)     | [bigscience/bloomz-560m](https://huggingface.co/bigscience/bloomz-560m)     | 70.96% |     
-| [YeungNLP/bloomz-820m-zh](https://huggingface.co/bigscience/YeungNLP/bloomz-820m-zh)     | [bigscience/bloomz-1b1](https://huggingface.co/bigscience/bloomz-1b1)       | 77.13% |     
-| [YeungNLP/bloomz-1b4-zh](https://huggingface.co/bigscience/YeungNLP/bloomz-1b4-zh)       | [bigscience/bloomz-1b7](https://huggingface.co/bigscience/bloomz-1b7)       | 81.14% |     
-| [YeungNLP/bloomz-2b6-zh](https://huggingface.co/bigscience/YeungNLP/bloomz-2b6-zh)       | [bigscience/bloomz-3b](https://huggingface.co/bigscience/bloomz-3b)         | 86.48% |     
-| [YeungNLP/bloomz-6b4-zh](https://huggingface.co/bigscience/YeungNLP/bloomz-6b4-zh)       | [bigscience/bloomz-7b1](https://huggingface.co/bigscience/bloomz-7b1)       | 90.81% |
-| [YeungNLP/bloomz-6b4-mt-zh](https://huggingface.co/bigscience/YeungNLP/bloomz-6b4-mt-zh) | [bigscience/bloomz-7b1-mt](https://huggingface.co/bigscience/bloomz-7b1-mt) | 90.81% |   
+| 裁剪模型                                                                        | 原模型                                        | 参数量比例  | 
+|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------|
+| [YeungNLP/bloom-396m-zh](https://huggingface.co/YeungNLP/bloom-396m-zh) | [bigscience/bloom-560m](https://huggingface.co/bigscience/bloom-560m)       | 70.96% |  
+| [YeungNLP/bloom-820m-zh](https://huggingface.co/YeungNLP/bloom-820m-zh) | [bigscience/bloom-1b1](https://huggingface.co/bigscience/bloom-1b1)         | 77.13% |     
+| [YeungNLP/bloom-1b4-zh](https://huggingface.co/YeungNLP/bloom-1b4-zh)   | [bigscience/bloom-1b7](https://huggingface.co/bigscience/bloom-1b7)         | 81.14% |     
+| [YeungNLP/bloom-2b6-zh](https://huggingface.co/YeungNLP/bloom-2b6-zh)   | [bigscience/bloom-3b](https://huggingface.co/bigscience/bloom-3b)           | 86.48% |     
+| [YeungNLP/bloom-6b4-zh](https://huggingface.co/YeungNLP/bloom-6b4-zh)   | [bigscience/bloom-7b1](https://huggingface.co/bigscience/bloom-7b1)         |  90.81% |         
+| [YeungNLP/bloomz-396m-zh](https://huggingface.co/YeungNLP/bloomz-396m-zh) | [bigscience/bloomz-560m](https://huggingface.co/bigscience/bloomz-560m)     | 70.96% |     
+| [YeungNLP/bloomz-820m-zh](https://huggingface.co/YeungNLP/bloomz-820m-zh) | [bigscience/bloomz-1b1](https://huggingface.co/bigscience/bloomz-1b1)       | 77.13% |     
+| [YeungNLP/bloomz-1b4-zh](https://huggingface.co/YeungNLP/bloomz-1b4-zh) | [bigscience/bloomz-1b7](https://huggingface.co/bigscience/bloomz-1b7)       | 81.14% |     
+| [YeungNLP/bloomz-2b6-zh](https://huggingface.co/YeungNLP/bloomz-2b6-zh) | [bigscience/bloomz-3b](https://huggingface.co/bigscience/bloomz-3b)         | 86.48% |     
+| [YeungNLP/bloomz-6b4-zh](https://huggingface.co/YeungNLP/bloomz-6b4-zh) | [bigscience/bloomz-7b1](https://huggingface.co/bigscience/bloomz-7b1)       | 90.81% |
+| [YeungNLP/bloomz-6b4-mt-zh](https://huggingface.co/YeungNLP/bloomz-6b4-mt-zh) | [bigscience/bloomz-7b1-mt](https://huggingface.co/bigscience/bloomz-7b1-mt) | 90.81% |   
 
 
 ## 使用介绍
