@@ -47,6 +47,13 @@ pruner.prune(model_name_or_path, new_tokenizer_name_or_path, save_path)
 pruner.check(model_name_or_path, save_path, text='长风破浪会有时')
 ```
 
+使用模型：
+```python
+from transformers import BloomTokenizerFast, BloomForCausalLM
+tokenizer = BloomTokenizerFast.from_pretrained('YeungNLP/bloom-1b4-zh')
+model = BloomForCausalLM.from_pretrained('YeungNLP/bloom-1b4-zh')
+print(tokenizer.batch_decode(model.generate(tokenizer.encode('长风破浪会有时', return_tensors='pt'))))
+```
 ## 关注我们
 
 <img src="pics/gongzhonghao.jpeg" width="250"> 
