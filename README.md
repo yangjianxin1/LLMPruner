@@ -1,6 +1,8 @@
 # LLMPruner：大语言模型裁剪工具
 
 ## 项目简介
+微信公众号【YeungNLP】文章：[LLMPruner：大语言模型裁剪工具](https://mp.weixin.qq.com/s/leVtrwZc1zLput51Nr99lw)
+
 LLMPruner是一个大语言模型裁剪工具，通过对大语言模型的冗余词表进行裁剪，减少模型参数量，降低显存占用，提升训练速度，并且能够保留预训练中学习到的知识。
 
 大语言模型(LLM, Large Language Model)犹如雨后春笋般，其虽然效果惊艳，但参数量巨大，让普通玩家望而却步。
